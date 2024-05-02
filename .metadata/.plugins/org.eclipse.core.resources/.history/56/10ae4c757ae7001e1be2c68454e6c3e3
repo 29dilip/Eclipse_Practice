@@ -1,0 +1,23 @@
+package DemoTh;
+
+@FunctionalInterface //--which have only one abstract method///
+interface A{
+	 abstract void show();// single abstract method// interface object cannot be created//
+}
+
+class B implements A{
+	@Override
+	public void show() {
+		System.out.println("Hi it is an Overidden Abstract Method");
+	}
+}
+
+
+public class LambaExp {
+	public static void main(String[] args) {
+//		A obj=new A();//cannot make oject of interface//
+		
+		A obj =new B(); //this is possible//
+		obj.show();
+	}
+}

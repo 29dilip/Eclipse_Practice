@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Login Page</title>
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+	rel="stylesheet">
+<script
+	src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<style>
+body {
+	display: flex;
+	height: 100vh;
+	align-items: center;
+	justify-content: center;
+	padding: 1rem;
+	background-image: url("hostel-1.jpg");
+}
+
+.form-signin {
+	width: 100%;
+	max-width: 330px;
+	padding: 15px;
+	margin: auto;
+	background-image: url("hostel-1.jpg");
+}
+
+.form-signin .checkbox {
+	font-weight: 400;
+}
+
+.form-signin .form-floating:focus-within {
+	z-index: 2;
+}
+
+.form-signin input[type="password"] {
+	margin-bottom: -1px;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+h1:before {
+	content: '';
+	width: 75px;
+	height: 3px;
+	background: #006699;
+	position: absolute;
+	left: 0px;
+	bottom: -10px;
+	right: 0;
+	margin: 0 auto;
+}
+h1 {
+  position: absolute;
+  top: 100px;
+  left: 50px;
+}
+h1 {
+  margin-top: 50px;
+}
+</style>
+</head>
+<h1>Welcome to Hostel Management System</h1>
+<body>
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrYKR0RxXDYSMH_KlLhwLvD7f1WiDQ2RegYA&s" class="d-block w-600 vh-300" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Furnished Rooms</h5>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLx3HrOZ87w-Ywe7rtxJ61x8phZcwIx_-Drg&s" class="d-block w-600 vh-300" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Rooms With AC/NON-AC</h5>
+        <p>Some representative placeholder content for the second slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9-HmKdfMlxv5-ml-CONutLr0p2h9bMAMBPw&s" class="d-block w-600 vh-300" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Rooms with Various Facility</h5>
+        <p>Some representative placeholder content for the third slide.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+	<main class="form-signin">
+		<form th:action="@{/login}" th:object="${user}" method="post">
+			
+			<h2 class="h3 mb-3 fw-normal">
+				<center>
+					<b>Login for more details </b>
+				</center>
+			</h2>
+			<div class="form-floating">
+				<label for="floatingInput">Username :</label> <input type="text"
+					th:field="*{username}" class="form-control" id="floatingInput"
+					placeholder="Username">
+				<div th:if="${#fields.hasErrors('username')}"
+					th:errors="*{username}" class="alert alert-danger">Username
+					Error</div>
+			</div>
+			<div class="form-floating">
+				<label for="floatingPassword">Password :</label>
+				<div th:if="${#fields.hasErrors('password')}"
+					th:errors="*{password}" class="alert alert-danger">Password
+					Error</div>
+				<input type="password" th:field="*{password}" class="form-control"
+					id="floatingPassword" placeholder="Password">
+			</div>
+			<button class="w-100 btn btn-lg btn-primary" type="submit">Login</button>
+
+
+
+		</form>
+		<button type="button" class="btn btn-info rounded-pill">
+			<a class="text-dark" th:href="@{/signup}">Sign Up</a>
+		</button>
+		<button type="button" class="btn btn-warning rounded-pill">
+			<a class="text-dark" th:href="@{/reset}">Reset Password</a>
+		</button>
+	</main>
+</body>
+</html>

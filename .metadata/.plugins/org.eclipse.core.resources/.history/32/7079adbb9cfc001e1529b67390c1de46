@@ -1,0 +1,27 @@
+package ArrayList;
+import java.util.*;
+public class Hashmapdemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		HashMap<Integer, String> hm=new HashMap<>();
+		hm.put(1, "Dilip");
+		hm.put(2, "Sudha");
+		hm.put(3, "Saim");
+		
+		System.out.println(hm);
+		System.out.println(hm.containsKey(4));
+		System.out.println(hm.getClass());
+		System.out.println(hm.size());
+	
+//		Set<Integer> s =hm.keySet();
+//		for(Integer x:s)
+//			{
+//			System.out.println(s+" "+hm.get(x) );
+//			}
+//			}
+		
+		
+		
+
+}

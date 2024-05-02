@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;Threads1&apos; to &apos;DemoTh&apos;&#x0D;&#x0A;- Original project: &apos;ThreadsDemo&apos;&#x0D;&#x0A;- Original element: &apos;ThreadsDemo/src/Threads1&apos;&#x0D;&#x0A;- Renamed element: &apos;ThreadsDemo/src/DemoTh&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;Threads1&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;Threads1" name="DemoTh" qualified="false" references="true" stamp="1710995480660" textual="false" version="1.0"/>
+</session>

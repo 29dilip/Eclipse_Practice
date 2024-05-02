@@ -1,0 +1,14 @@
+package com.dilip.firstWebpage.login.LoginController;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+public class LoginController {
+	
+	@RequestMapping("login")
+	@ResponseBody
+	public String mylogin() {
+		return "Welcome!! To Login Page!!";
+	}
+
+}

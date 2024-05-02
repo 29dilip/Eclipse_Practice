@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<bean name="customer" class="com.dilip.spring.springcore.map.Customers">
+		<property name="id">
+			<value>102</value>
+		</property>
+		
+		<property name="products">
+			<map>
+				<entry key="1010" value="Iphone"></entry>
+				<entry key="1022" value="Kela"></entry>
+				<entry key="1002" value="BIke"></entry>
+				<entry key="1110" value="LapTop"></entry>
+			
+			</map>
+		</property>
+	
+	</bean>
+
+</beans>

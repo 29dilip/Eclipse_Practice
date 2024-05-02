@@ -1,0 +1,57 @@
+1712119812590	Delete element
+1712119954523	Encapsulate field 'id'
+1712119961748	Encapsulate field 'name'
+1712120254063	Delete element
+1712120293428	Delete element
+1712120395096	Delete element
+1712120613934	Delete element
+1712120661555	Delete element
+1712120740225	Delete element
+1712123075697	Delete element
+1712124385598	Rename resource 'NewFile1.xml'
+1712132604027	Delete element
+1712132611626	Copy file
+1712132727081	Delete element
+1712133921956	Copy compilation unit
+1712134390106	Rename resource 'Config.xml'
+1712135261277	Copy file
+1712135278893	Rename resource 'listConfig.xml'
+1712135366802	Copy compilation unit
+1712136551046	Copy file
+1712136557338	Copy compilation unit
+1712136570998	Rename resource 'setConfig.xml'
+1712137109026	Copy file
+1712137123829	Copy compilation unit
+1712137251756	Rename resource 'mapConfig.xml'
+1712144853059	Encapsulate field 'languages'
+1712146110619	Encapsulate field 'scores'
+1712146129405	Copy file
+1712146139442	Copy compilation unit
+1712146158418	Rename resource 'propertiesConfig.xml'
+1712205496338	Encapsulate field 'id'
+1712205512108	Copy file
+1712205524743	Rename resource 'reftypeConfig.xml'
+1712207975710	Rename package 'com.dilip.spring.springcore.lc'
+1712208169532	Copy elements
+1712208196411	Rename resource 'lcConfig.xml'
+1712209700257	Copy elements
+1712209735696	Rename resource 'interfaceConfig.xml'
+1712220321638	Copy file
+1712220339976	Rename resource 'annoConfig.xml'
+1712220347781	Copy compilation unit
+1712227810737	Copy file
+1712227899125	Rename resource 'DcConfig.xml'
+1712231487155	Rename package 'com.dilip.spring.springcore.InnerBeans'
+1712232851341	Delete element
+1712232856840	Copy compilation unit
+1712241793644	Copy package
+1712241800260	Copy package
+1712241808753	Copy package
+1712241847541	Copy package
+1712241854386	Copy package
+1712241860341	Copy package
+1712241867324	Copy package
+1712241877567	Copy package
+1712241943809	Copy package
+1712241952660	Copy package
+1712241958010	Copy package

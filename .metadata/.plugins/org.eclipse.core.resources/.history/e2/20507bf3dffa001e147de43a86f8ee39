@@ -1,0 +1,14 @@
+package com.dilip.firstWebpage.services;
+
+public class AuthenticationService {
+	
+	public boolean Authenticate(String username, String Password){
+		
+		boolean isValidUser= username.equalsIgnoreCase("Admin");
+		boolean IsValidPassword= Password.equalsIgnoreCase("Dilip29"); 
+		
+		return isValidUser && IsValidPassword;
+		
+	}
+
+}
